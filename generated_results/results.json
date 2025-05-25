@@ -1,0 +1,142 @@
+[
+  {
+    "id": "sample_0",
+    "valid": true,
+    "volume": 0.0014471463390850626,
+    "mass": 10.4049821780216,
+    "wall_thickness": 0.0034607181746508526,
+    "material": "Cr",
+    "cond": {
+      "max_volume": 0.003599999938160181,
+      "max_mass": 25.884000778198242,
+      "min_thickness": 0.0007999999797903001,
+      "density": 7190
+    }
+  },
+  {
+    "id": "sample_1",
+    "valid": true,
+    "volume": 0.0010911958693129034,
+    "mass": 21.060080277739036,
+    "wall_thickness": 0.003337412392924594,
+    "material": "Au",
+    "cond": {
+      "max_volume": 0.0035000001080334187,
+      "max_mass": 67.55000305175781,
+      "min_thickness": 0.0005000000237487257,
+      "density": 19300
+    }
+  },
+  {
+    "id": "sample_2",
+    "valid": true,
+    "volume": 0.001366853713989258,
+    "mass": 12.247009277343752,
+    "wall_thickness": 0.001973684210526315,
+    "material": "Cu",
+    "cond": {
+      "max_volume": 0.0035000001080334187,
+      "max_mass": 31.360000610351562,
+      "min_thickness": 0.0007999999797903001,
+      "density": 8960
+    }
+  },
+  {
+    "id": "sample_3",
+    "valid": true,
+    "volume": 5.682538049097328e-05,
+    "mass": 0.44607923685414025,
+    "wall_thickness": 0.0050986842105263126,
+    "material": "Fe",
+    "cond": {
+      "max_volume": 0.00430000014603138,
+      "max_mass": 33.755001068115234,
+      "min_thickness": 0.0005000000237487257,
+      "density": 7850
+    }
+  },
+  {
+    "id": "sample_4",
+    "valid": false,
+    "volume": 0.08325020887746014,
+    "mass": 598.5690018289384,
+    "wall_thickness": 0.0859375,
+    "material": "Cr",
+    "cond": {
+      "max_volume": 0.002400000113993883,
+      "max_mass": 17.256000518798828,
+      "min_thickness": 0.0007999999797903001,
+      "density": 7190
+    }
+  },
+  {
+    "id": "sample_5",
+    "valid": true,
+    "volume": 4.897246976495875e-05,
+    "mass": 0.9451686664637039,
+    "wall_thickness": 0.002631578947368421,
+    "material": "Au",
+    "cond": {
+      "max_volume": 0.004900000058114529,
+      "max_mass": 94.56999969482422,
+      "min_thickness": 0.0003000000142492354,
+      "density": 19300
+    }
+  },
+  {
+    "id": "sample_6",
+    "valid": true,
+    "volume": 0.0003967285156249999,
+    "mass": 7.656860351562498,
+    "wall_thickness": 0.06249999999999999,
+    "material": "Au",
+    "cond": {
+      "max_volume": 0.0031999999191612005,
+      "max_mass": 61.7599983215332,
+      "min_thickness": 0.0005000000237487257,
+      "density": 19300
+    }
+  },
+  {
+    "id": "sample_7",
+    "valid": true,
+    "volume": 0.0004793346161362497,
+    "mass": 1.2942034635678743,
+    "wall_thickness": 0.0026315789473684223,
+    "material": "Al",
+    "cond": {
+      "max_volume": 0.003100000089034438,
+      "max_mass": 8.369999885559082,
+      "min_thickness": 0.0008999999845400453,
+      "density": 2700
+    }
+  },
+  {
+    "id": "sample_8",
+    "valid": true,
+    "volume": 3.6101953331372387e-05,
+    "mass": 0.6967676992954871,
+    "wall_thickness": 0.0019697595142223186,
+    "material": "Au",
+    "cond": {
+      "max_volume": 0.0038999998942017555,
+      "max_mass": 75.2699966430664,
+      "min_thickness": 0.0010000000474974513,
+      "density": 19300
+    }
+  },
+  {
+    "id": "sample_9",
+    "valid": true,
+    "volume": 0.0006171860101973617,
+    "mass": 4.844910180049289,
+    "wall_thickness": 0.0039473684210526334,
+    "material": "Fe",
+    "cond": {
+      "max_volume": 0.0038999998942017555,
+      "max_mass": 30.614999771118164,
+      "min_thickness": 0.0006000000284984708,
+      "density": 7850
+    }
+  }
+]
