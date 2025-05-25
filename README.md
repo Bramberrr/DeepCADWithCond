@@ -13,7 +13,7 @@ This repository is a **modification** of the original [DeepCAD](https://github.c
   * Minimum Wall Thickness
   * Material selection (Al, Fe, Ni, Cr, Cu, Au) with known densities
 * 🔍 `label_limit.py`: used to generate the conditional vectors (volume, mass, thickness, material).
-* 🧠 Trained a `PhysicalPropertyRegressor` to predict physical quantities from **command and argument logits**, enabling **differentiable constraint loss**.
+* 🧠 Trained a `PhysicalRegressorFromLogits` to predict physical quantities from **command and argument logits**, enabling **differentiable constraint loss**.
 * ✅ Manufacturability checked via:
 
   * Shape validity (`vec2CADsolid`)
@@ -95,7 +95,7 @@ DeepCAD/
 ├── test_with_cond.py         # Sample and test conditioned generations
 ├── model/
 │   ├── autoencoder.py        # Conditional encoder, bottleneck, decoder
-│   ├── regressor.py # Predict physical properties from logits
+│   ├── regressor.py          # Predict physical properties from logits
 │
 ├── trainer/
 │   ├── trainer_ae_with_cond.py
