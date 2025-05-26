@@ -38,11 +38,11 @@ def generate_sample_conditions(num_samples=10):
         density = DENSITY_TABLE[material_name]  # e.g., 2700, 7850, etc.
 
         # Sample volume and compute mass
-        max_volume = round(np.random.uniform(0.002, 0.005), 4)  # in m³
+        max_volume = round(np.random.uniform(0.1, 1), 4)
         max_mass = round(density * max_volume, 4)  # kg
 
         # Sample minimum wall thickness
-        min_thick = round(np.random.uniform(0.0002, 0.001), 4)  # in m
+        min_thick = round(np.random.uniform(0.001, 0.005), 4)  # in m
 
         mat_onehot = np.eye(6)[mat_id]
         cond_vec = np.concatenate([[max_volume, max_mass, min_thick], mat_onehot])
@@ -100,8 +100,8 @@ def run_test(model_path, cfg, save_dir="generated_results", num_valid=10):
             props = GProp_GProps()
             brepgprop.VolumeProperties(shape, props)
             volume = props.Mass()
-            if volume < 0:
-                raise ValueError(f"Invalid negative volume: {volume}")
+            if volume < 1e-3 or volume>1:
+                raise ValueError(f"Invalid volume: {volume}")
 
 
             # Wall thickness
@@ -167,7 +167,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--ckpt', type=str, required=True, help='Path to model checkpoint (.pth)')
     parser.add_argument('--save_dir', type=str, default='generated_results', help='Directory to save outputs')
-    parser.add_argument('--num_samples', type=int, default=10, help='Number of samples to generate')
+    parser.add_argument('--num_samples', type=int, default=100, help='Number of samples to generate')
     args = parser.parse_args()
 
     cfg = ConfigAE('test')

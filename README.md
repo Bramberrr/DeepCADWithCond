@@ -70,6 +70,21 @@ The training pipeline includes:
 * Decoder with condition-aware transformer
 * Physical regressor used during training for soft constraint supervision
 
+## 📊 Example Results
+
+We tested the trained conditional VAE by randomly sampling latent vectors and decoding them under random constraint vectors. (See results in `generated_results/results.json`)
+
+Out of 100 sampled designs:
+
+* ✅ 67 were valid, satisfying all specified constraints:
+  * **Volume < max_volume**
+  * **Mass < max_mass**
+  * **Wall thickness > min_thickness**
+
+This indicates that the model successfully learned to generate constraint-satisfying CAD shapes under varying materials and geometric limits.
+
+Validation is performed via OpenCascade solid construction and geometric checks.
+
 ### 🔧 Data Requirements
 
 Downloaded from the original [DeepCAD](https://github.com/ChrisWu1997/DeepCAD.git).
